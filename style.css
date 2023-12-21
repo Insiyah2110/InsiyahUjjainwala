@@ -1,0 +1,358 @@
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+  }
+
+.about-me {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); /* subtle gradient */
+    color: #333;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px; /* Adds space between image and text */
+}
+
+.image-content img {
+    width: 500px;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px; /* Slightly rounded corners for the image */
+}
+
+.text-content {
+    max-width: 600px; /* Ensures text doesn't stretch too far */
+}
+
+.heading-content1 h2, .heading-content2 h2 {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.heading-content1 h2 {
+    font-weight: 400;
+    font-size: 24px; /* Slightly larger for better readability */
+    color: #5e1d6f;
+}
+
+.heading-content2 h2 {
+    font-weight: 600;
+    font-size: 36px; /* More prominent size for the name */
+    font-style: normal; /* Keep it simple and strong */
+}
+
+.tagline {
+    font-style: italic;
+    color: #6c757d; /* Subdued color for the tagline */
+    font-size: 20px;
+    margin-top: 10px; /* Space above the tagline */
+}
+
+.image-content img:hover {
+    transform: scale(1.1); /* More pronounced hover effect */
+}
+/* ... other styles ... */
+
+
+
+/* Responsive design adjustments, if needed */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-content img {
+        width: 100%;
+        max-width: 300px; /* Adjust the size on smaller screens */
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .social-link {
+        padding: 8px 12px; /* Adjust padding on smaller screens */
+    }
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column; /* Stack image and text on small screens */
+    }
+
+    .image-content img, .text-content {
+        max-width: 100%; /* Full width on small screens */
+    }
+
+    .text-content {
+        text-align: center; /* Center text on small screens */
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    /* background-image: url('bg.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;  */
+    background: #fff;
+
+}
+
+#about {
+    background-color: #f8f8f8; /* A light background to contrast with the text */
+    padding: 40px; /* Add more padding for a spacious layout */
+}
+
+.title1 h2, .title2 h2 {
+    color: #5D5C61; /* A soft color for the titles */
+    margin-bottom: 10px; /* Adds space below the titles */
+}
+
+.title1 h2 {
+    font-size: 24px; /* A larger size for subtitle */
+    font-family: 'Segoe UI', sans-serif; /* A more modern font-family */
+    text-transform: uppercase; /* Stylistic choice for subtitles */
+}
+
+.title2 h2 {
+    font-size: 48px; /* A larger size for main title */
+    font-family: 'Segoe UI', sans-serif; /* Maintain consistency in font-family */
+    color: #2B2D42; /* A darker color for the main title for emphasis */
+}
+
+.content p {
+    font-size: 18px; /* Larger font size for readability */
+    line-height: 1.6; /* Increase line height for better readability */
+    color: #495057; /* A softer color than pure black for the text */
+    margin-bottom: 20px; /* Adds space between paragraphs */
+}
+
+/* Add a hover effect for any links within the content */
+.content a:hover {
+    color: #007bff; /* Highlight color for links when hovered */
+    text-decoration: underline; /* Adds an underline to show interactivity */
+}
+
+
+.site-header {
+    background-color: #FFC0CB; /* Example pink background color */
+    padding: 10px 20px; /* Adjust the padding as needed */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* This will push the name to the left and the nav to the right */
+    align-items: center;
+}
+
+.name {
+    margin: 0; /* Adjust as needed */
+    font-size: 1.5em; /* Adjust the size as needed */
+    color: #FFF; /* Adjust text color as needed */
+}
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav a {
+    transition: transform 0.5s ease-in-out; 
+    text-decoration: none;
+    color: #FFF; /* Adjust text color as needed */
+    margin-left: 20px; /* Space out the navigation items */
+}
+
+.site-nav a:hover {
+    transform: translateY(-5px); /* Moves the link up by 5px on hover, creating a 'float' effect */
+  }
+
+#projects {
+    background-color: #f9f9f9; /* Light background for the section */
+    padding: 2rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project-item {
+    background-color: #ffffff; /* Card background */
+    border-radius: 8px; /* Rounded corners for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    font-size: 1.75rem;
+    color: #5e1d6f; /* Theme color for titles */
+    margin-bottom: 0.5rem;
+}
+
+.project-thumbnail {
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 1rem; /* Space below the thumbnail */
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #555; /* Darker text color for contrast */
+    margin-bottom: 1rem;
+}
+
+.read-more-link {
+    font-weight: bold;
+    color: #007bff; /* Use brand color for links */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.github-link {
+    font-weight: bold;
+    color: #007bff; /* Use brand color for links */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.read-more-link:hover {
+    color: #0056b3; /* Darker blue on hover for interactivity */
+}
+
+.coming-soon {
+    text-align: center;
+    color: #777; /* Subdued color indicating future content */
+    font-style: italic;
+}
+
+/* Further responsive adjustments can be added here */
+#technical-skills {
+    background-color: #f7f7f7; /* Neutral background */
+    padding: 2em;
+    text-align: center;
+}
+
+#technical-skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.skill-category {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    width: 200px; /* Fixed width for each category */
+    margin-bottom: 1em; /* Spacing between rows */
+}
+
+.skill-category h3 {
+    font-size: 1.2em;
+    color: #5e1d6f; /* Theme color for subheadings */
+    margin-bottom: 0.5em;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-list li {
+    background-color: #e9ecef; /* Light background for each skill */
+    margin-bottom: 0.25em; /* Spacing between skills */
+    padding: 0.5em;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-category {
+        width: 80%; /* More width on small screens */
+    }
+}
+
+#socials {
+    text-align: center; /* Centers the content */
+    padding: 20px 0; /* Adds padding to the top and bottom */
+    background-color: #f9f9f9; /* Light background for the section */
+}
+
+#socials h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em; /* Space below the section title */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Center the social links */
+    gap: 15px; /* Adds space between the links */
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.social-link {
+    display: flex;
+    align-items: center; /* Aligns icon and text */
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Color for the text */
+    font-weight: bold; /* Makes text bold */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    padding: 5px; /* Padding around the links */
+}
+
+.social-link img {
+    width: 24px; /* Fixed width for icons */
+    height: 24px; /* Fixed height for icons */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.social-link:hover, .social-link:focus {
+    color: #007bff; /* Color change on hover and focus */
+}
+
+/* Additional responsive adjustments can be added here */
+
+/* Footer styles */
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #FFC0CB;
+    color: #fff;
+}
