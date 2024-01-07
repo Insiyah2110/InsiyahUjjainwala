@@ -55,10 +55,8 @@ html {
 }
 
 .image-content img:hover {
-    transform: scale(1.1); /* More pronounced hover effect */
+    transform: scale(1.1);
 }
-/* ... other styles ... */
-
 
 
 /* Responsive design adjustments, if needed */
@@ -228,6 +226,13 @@ body {
     transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
+.filter-link {
+    font-weight: bold;
+    color: #007bff; /* Use brand color for links */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */   
+}
+
 .read-more-link:hover {
     color: #0056b3; /* Darker blue on hover for interactivity */
 }
@@ -238,7 +243,7 @@ body {
     font-style: italic;
 }
 
-/* Further responsive adjustments can be added here */
+
 #technical-skills {
     background-color: #f7f7f7; /* Neutral background */
     padding: 2em;
