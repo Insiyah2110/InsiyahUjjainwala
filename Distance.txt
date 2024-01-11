@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() 
+{
+    int laps;
+    float distance;
+    int truth1 = 1;
+    int truth2 = 1;
+
+    while (truth1!=0) {
+
+        printf ("Enter the number of laps: ");
+        scanf ("%d" , &laps); 
+
+        if (laps <= 0) {
+            printf ("The value of number of laps must be positive and non zero \n");
+        } else {
+            truth1 = 0;
+        }
+    }
+    
+    while (truth2!=0){
+        printf ("Enter the distance of the lap: ");
+        scanf ("%f" , &distance);
+
+        if (distance <= 0) {
+            printf ("The value of distance must be positive and non zero \n");
+        } else {
+            truth2 = 0;
+        }
+    }
+
+    printf ("# of Laps  Distance             Speed                Time \n");
+    printf ("***************************************************************** \n\n");
+
+    float speed;
+    float totalSpeed;
+    float time;
+    float totalTime;
+
+    for (int i = 1 ; i <= laps ; i++){
+        printf ("Enter the speed of the car during lap %d: " , i);
+        scanf ("%f" , &speed);
+        totalSpeed+=speed;
+        time = distance/speed;
+        totalTime+= time;
+        printf("\n %-10d %-20.2f %-20.2f %-20.2f \n" , i , distance , speed , time);
+    }
+
+    printf("\nTotal:      %-20.2f %-20.2f %-20.2f \n" , laps*distance , (laps*distance)/totalTime , totalTime);
+
+    return 0;
+
+}

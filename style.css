@@ -357,3 +357,38 @@ footer {
     background: #FFC0CB;
     color: #fff;
 }
+
+.course-title {
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 10px; /* Space between title and description */
+    /* Other styles as needed */
+}
+
+.course-description {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    /* Other styles as needed */
+}
+
+.course-container:hover .course-description {
+    display: block;
+    opacity: 1;
+}
+
+
+.course-container {
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 15px; /* Padding around the content */
+    margin-bottom: 15px; /* Space between each course */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover */
+}
+
+.course-container:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    background-color: #e0e0e0; /* Optionally, change background color on hover */
+}
+
+

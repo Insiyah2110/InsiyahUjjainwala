@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+const int NUMS = 3;
+
+int main() 
+{   
+    int highTemp;
+    int lowTemp;
+
+    printf (">----------------------------Temperature Analyzer -----------------------------< \n");
+    for (int i = 1 ; i <= NUMS ; i++) {
+        printf ("Enter the high value for day %d: " , i);
+        scanf("%d", &highTemp);
+        printf ("Enter the low value for day %d: " , i);
+        scanf("%d",&lowTemp);
+
+        int truth = 1;
+        while (truth!=0){
+            if (highTemp <=lowTemp) {
+                printf ("Incorrect values, temperatures must be in the range -40 to 40, high must be greater than low. \n");  
+                i -= 1;
+                truth = 0;
+            } else if (highTemp > 40 || lowTemp < -40) {
+                printf ("Incorrect values, temperatures must be in the range -40 to 40, high must be greater than low. \n");
+                i -= 1;
+                truth = 0;
+            } else {
+                break;
+            }
+        }
+    }
+
+    return 0;
+}
