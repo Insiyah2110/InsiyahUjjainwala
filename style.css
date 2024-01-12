@@ -179,6 +179,11 @@ body {
     padding: 2rem;
 }
 
+#workexp {
+    background-color: #f9f9f9; /* Light background for the section */
+    padding: 2rem;
+}
+
 .section-title {
     font-size: 2.5rem;
     color: #333;
@@ -194,7 +199,21 @@ body {
     margin-bottom: 1rem;
 }
 
+.exp-item {
+    background-color: #ffffff; /* Card background */
+    border-radius: 8px; /* Rounded corners for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
 .project-title {
+    font-size: 1.75rem;
+    color: #5e1d6f; /* Theme color for titles */
+    margin-bottom: 0.5rem;
+}
+
+.exp-title {
     font-size: 1.75rem;
     color: #5e1d6f; /* Theme color for titles */
     margin-bottom: 0.5rem;
@@ -207,6 +226,12 @@ body {
 }
 
 .project-description {
+    font-size: 1rem;
+    color: #555; /* Darker text color for contrast */
+    margin-bottom: 1rem;
+}
+
+.exp-description {
     font-size: 1rem;
     color: #555; /* Darker text color for contrast */
     margin-bottom: 1rem;
@@ -232,6 +257,21 @@ body {
     text-decoration: none; /* Removes underline */
     transition: color 0.3s ease; /* Smooth transition for hover effect */   
 }
+
+.project-pitch-link {
+    font-weight: bold;
+    color: #007bff; /* Use brand color for links */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */   
+}
+
+.sketch-link {
+    font-weight: bold;
+    color: #007bff; /* Use brand color for links */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */   
+}
+
 
 .read-more-link:hover {
     color: #0056b3; /* Darker blue on hover for interactivity */
